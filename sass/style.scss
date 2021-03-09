@@ -210,7 +210,9 @@ body {
 }
 .block-photo {
     display: inline-flex;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
     &__plans {
         background-image: url(../img/plans.png);
         background-size: cover;
@@ -264,14 +266,15 @@ body {
         text-align: center;
     }
     &__btn {
+        display: block;
+        margin: 0 auto;
         margin: 40px auto;
     }
     &__form {
+        display: block;
+        margin: 0 auto;
         margin-top: 65px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
+        width: 500px;
         input::-webkit-input-placeholder {color:#5F5D5D;}
         input::-moz-placeholder {color:#5F5D5D;}
         input::-ms-input-placeholder {color:#5F5D5D;}
@@ -321,6 +324,6 @@ body {
         }
     }
 }
-.block-contact__form-name input, .block-contact__form-email  input{
+.block-contact__form input {
     width: 100%;
 }

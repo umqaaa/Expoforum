@@ -273,8 +273,12 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .block-photo__plans {
@@ -339,23 +343,16 @@ body {
 }
 
 .block-contact__btn {
+  display: block;
+  margin: 0 auto;
   margin: 40px auto;
 }
 
 .block-contact__form {
+  display: block;
+  margin: 0 auto;
   margin-top: 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 500px;
 }
 
 .block-contact__form input::-webkit-input-placeholder {
@@ -425,7 +422,7 @@ body {
   margin-left: 10px;
 }
 
-.block-contact__form-name input, .block-contact__form-email input {
+.block-contact__form input {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
